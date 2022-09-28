@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FlexBox</title>
+  </head>
+  <body>
+    <main class="main">
+      <p class="title">Руководство по FLEXBOX CSS</p>
+      <div class="flexbox_main">
+        <p class="flex-cont">Свойства Flex-контейнера</p>
+        <!-- display -->
+        <div class="flex-container">
+          <div class="flex-numb">1</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">display: flex;</div>
+              <div class="flex-title2">display: webkit-flex;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                запуск механизма Flexbox
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                flex / inline-flex
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">inline-flex</div>
+            </div>
+          </div>
+        </div>
+        <!-- flex-direction -->
+        <div class="flex-container">
+          <div class="flex-numb">2</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex-direction: row;</div>
+              <div class="flex-title2">webkit-flex-direction: row;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                направление укладки элементов по осям
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                row / ro-reverse / column / column-reverse
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-direction">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">row</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-direction-2">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">row-reverse</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-direction-3">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">column</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-direction-4">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">column-reverse</div>
+            </div>
+          </div>
+        </div>
+        <!-- flex-wrap -->
+        <div class="flex-container">
+          <div class="flex-numb">3</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex-wrap: nowrap;</div>
+              <div class="flex-title2">webkit-flex-wrap: nowrap;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                расположение элементов в одну или несколько строк
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                nowrap / wrap / wrap-reverse
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-wrap">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">nowrap</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-wrap-2">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">wrap</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-wrap-3">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">wrap-reverse</div>
+            </div>
+          </div>
+        </div>
+        <!-- flex-flow -->
+        <div class="flex-container">
+          <div class="flex-numb">4</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex-flow: row nowrap;</div>
+              <div class="flex-title2">webkit-flex-flow: row nowrap;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                сокращенная запись для свойств flex-direction и flex-wrap
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                см. свойства 2 и 3
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- justify-content -->
+        <div class="flex-container">
+          <div class="flex-numb">5</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">justify-content: flex-start;</div>
+              <div class="flex-title2">webkit-justify-content: flex-start;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                выравнивание flex-элементов по главной оси текущей строки
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                flex-start / flex-end / center / space-between / space-around
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-jc">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex-start</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-jc-2">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex-end</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-jc-3">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">center</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-jc-4">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">space-between</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-jc-5">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">space-around</div>
+            </div>
+          </div>
+        </div>
+        <!-- align-item -->
+        <div class="flex-container">
+          <div class="flex-numb">6</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">align-item: stretch;</div>
+              <div class="flex-title2">webkit-align-item: stretch;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                выравнивание flex-элементов вдоль поперечной оси
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                stretch / flex-start / flex-end / center / baseline
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ai">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">stretch</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ai-2">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex-start</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ai-3">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex-end</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ai-4">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">center</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ai-5">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">baseline</div>
+            </div>
+          </div>
+        </div>
+        <!-- align-content -->
+        <div class="flex-container">
+          <div class="flex-numb">7</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">align-content: stretch;</div>
+              <div class="flex-title2">webkit-align-item: stretch;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                выравнивание строк flex-элементов вдоль поперечной оси
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                stretch / flex-start / flex-end / center / space-between /
+                space-around
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ac">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">stretch</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ac-2">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex-start</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ac-3">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">flex-end</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ac-4">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">center</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ac-5">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">space-between</div>
+            </div>
+            <div class="flex-card">
+              <div class="flex-father" id="flex-ac-6">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title">space-around</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flexbox_main">
+        <p class="flex-cont">Свойства Flex-элемента</p>
+        <div class="flex-container">
+          <div class="flex-numb">1</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">order: 0;</div>
+              <div class="flex-title2">webkit-order: 0;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                определение порядка расстановки flex-элементов
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                (целое число)
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father-title2">order:0 order:1</div>
+              <div class="flex-father" id="flex-order">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">order:-1 order:0 order:2</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div class="flex-numb">2</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex-grow: 0;</div>
+              <div class="flex-title2">webkit-flex-grow: 0;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                указывает фактор расстягивания flex-элемента
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                (целое неотрицательное число)
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="flex-grow">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">flex-grow: 1</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="flex-grow">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">flex-grow: 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
