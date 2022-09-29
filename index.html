@@ -447,6 +447,7 @@
       </div>
       <div class="flexbox_main">
         <p class="flex-cont">Свойства Flex-элемента</p>
+        <!-- order -->
         <div class="flex-container">
           <div class="flex-numb">1</div>
           <div class="flex-text">
@@ -479,6 +480,7 @@
             </div>
           </div>
         </div>
+        <!-- grow -->
         <div class="flex-container">
           <div class="flex-numb">2</div>
           <div class="flex-text">
@@ -519,6 +521,147 @@
                 <div class="flex-child">5</div>
               </div>
               <div class="flex-father-title2">flex-grow: 3</div>
+            </div>
+          </div>
+        </div>
+        <!-- shrink -->
+        <div class="flex-container">
+          <div class="flex-numb">2</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex-shrink: 0;</div>
+              <div class="flex-title2">webkit-flex-shrink: 0;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                указывает фактор сужения flex-элемента
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                0
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="flex-shrink-1">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">flex-shrink: 1</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="flex-shrink">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">flex-shrink: 0</div>
+            </div>
+          </div>
+        </div>
+        <!-- basis -->
+        <div class="flex-container">
+          <div class="flex-numb">2</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex-basis: auto;</div>
+              <div class="flex-title2">webkit-flex-basis: auto;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                указывает исходный главный рамер flex-элемента
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                длина элемента в пикселях (на пример 240px)
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="flex-basis-1">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">flex-basis: auto</div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="flex-basis">
+                <div class="flex-child">1</div>
+                <div class="flex-child">2</div>
+                <div class="flex-child">3</div>
+                <div class="flex-child">4</div>
+                <div class="flex-child">5</div>
+              </div>
+              <div class="flex-father-title2">flex-basis: 30px</div>
+            </div>
+          </div>
+        </div>
+        <!-- flex -->
+        <div class="flex-container">
+          <div class="flex-numb">2</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">flex: 0 1 auto;</div>
+              <div class="flex-title2">webkit-flex: 0 1 auto;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                сокращённая запись для свойст flex-grow, flex-shrink и
+                flex-basis
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                см. свойства 2,3 и 4
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- align-self -->
+        <div class="flex-container">
+          <div class="flex-numb">2</div>
+          <div class="flex-text">
+            <div class="flex-title">
+              <div class="flex-title1">align-self: auto;</div>
+              <div class="flex-title2">webkit-align-self: auto;</div>
+            </div>
+            <div class="flex-text">
+              <div class="flex-text1">
+                <span>Назначение:</span>
+                переопределяет выравнивание элемента по умолчанию
+              </div>
+              <div class="flex-text2">
+                <span>Возможные значения:</span>
+                auto / flex-start / flex-end / center / baseline / stretch
+              </div>
+            </div>
+          </div>
+          <div class="flex-column">
+            <div class="flex-card2">
+              <div class="flex-father" id="align-self">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+              </div>
+              <div class="flex-father-title2">align-self: flex-end</div>
             </div>
           </div>
         </div>
